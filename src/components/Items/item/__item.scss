@@ -1,0 +1,19 @@
+.item {
+	margin-top: 30px;
+}
+
+.itemTop {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+    background-color: var(--color-bg);
+	padding: 45px 30px;
+	margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 1015px) {
+	.itemTop {
+        display: flex;
+        flex-wrap: wrap;
+	}
+}

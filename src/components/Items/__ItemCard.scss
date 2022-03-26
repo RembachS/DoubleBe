@@ -1,0 +1,133 @@
+.item-card {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-bg);
+	border-radius: 10px;
+	transition: var(--standard-transition);
+    overflow: hidden;
+
+	&:hover {
+		background-color: var(--color-hover-standardd);
+		box-shadow: var(--standard-box-shadow);
+	}
+
+	&__img {
+		max-height: 220px;
+        object-fit: cover;
+        object-position: center;
+	}
+
+	&__info {
+		padding: 0 10px 10px 10px;
+	}
+
+	&__title {
+		width: 100%;
+		font-size: 8px;
+		font-weight: 300;
+		margin: 5px 0 8px 0;
+	}
+
+	&__avatars {
+		display: flex;
+        align-items: center;
+    }
+
+	&__avatarsItem {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		border: 1px solid #ffffff;
+        object-fit: cover;
+        object-position: center;
+
+        &:not(:last-child) {
+            margin-right: -8px;
+        }
+	}
+
+    &__count {
+        font-size: 8px;
+        font-weight: 800;
+        color: #D2D2D2;
+        margin-left: 10px;
+    }
+
+	&__tag {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		font-size: 10px;
+		font-weight: 600;
+		margin: 15px 0;
+	}
+
+	&__fullPrice {
+		display: flex;
+		align-items: flex-end;
+		font-size: 10px;
+		font-weight: 600;
+	}
+
+	&__price {
+		display: flex;
+		align-items: flex-end;
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--color-font-third);
+	}
+
+	&__rates {
+		display: flex;
+		align-items: center;
+		column-gap: 5px;
+		font-size: 8px;
+		color: var(--color-font-second);
+	}
+
+	&__ratesItem {
+		display: flex;
+		column-gap: 5px;
+
+		img {
+			height: 12px;
+		}
+
+		&:not(:first-child) {
+			&::before {
+				content: "";
+				height: 12px;
+				border-right: 1px solid var(--color-font-second);
+			}
+		}
+	}
+
+	&__delivery {
+		max-width: fit-content;
+		height: 12px;
+		font-size: 8px;
+		color: var(--color-font-second);
+		background-color: var(--color-bg-main);
+		border-radius: 3px;
+		padding: 2px 4px;
+		margin: 10px 0 0;
+	}
+}
+
+.green {
+	color: #0eb245;
+}
+
+.blue {
+	color: #004e9d;
+}
+
+.gold {
+	color: #ff8800;
+}
+
+.bordeGold {
+    max-width: fit-content;
+    border: 2px solid #ff8800;
+    padding: 0 4px;
+}

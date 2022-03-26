@@ -1,0 +1,23 @@
+.itemtTop {
+    &__right {
+        margin-left: 20px;
+    }
+
+    &__report {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        color: #FF8800;
+    }
+
+    &__reportIcon {
+        font-size: 15px;
+        color: var(--color-font-second);
+    }
+
+    &__id {
+        color: var(--color-font-second);
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+}

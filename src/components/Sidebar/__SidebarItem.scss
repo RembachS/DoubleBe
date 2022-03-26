@@ -1,0 +1,16 @@
+.sidebar-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+    height: 20px;
+	padding: 10px 15px;
+    transition: var(--standard-transition);
+
+    &:hover {
+        background-color: var(--color-bg-main);
+    }
+
+    &__img {
+        width: 20px;
+    }
+}

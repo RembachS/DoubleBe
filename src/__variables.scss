@@ -1,0 +1,41 @@
+:root {
+	--color-bg-main: #f6f6f6;
+	--color-bg: #ffffff;
+	--color-bg-btn: #db2525;
+	--color-border: #dfdfdf;
+	--color-hover-standard: rgba(243, 243, 243, 0.6);
+
+	--color-font-second: #949494;
+	--color-font-third: #db2525;
+
+	--standard-transition: all 0.3s ease-out;
+	--standard-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+// CLASSESs
+
+// FONTS COLORS
+.red {
+	color: #db2525;
+}
+
+.grey {
+	color: #e5e5e5;
+}
+
+// BACKGROUND COLLORS
+.bg-red {
+	background-color: #db2525;
+}
+
+.bg-blue {
+	background-color: #394cff;
+}
+
+.bg-green {
+	background-color: #0fd81c;
+}
+
+.bg-grey {
+	background-color: #F0F0F0;
+}

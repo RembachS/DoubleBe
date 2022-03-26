@@ -1,0 +1,28 @@
+header {
+	background-color: var(--color-bg);
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	width: 200px;
+	height: 113px;
+}
+
+.header__nav {
+	display: flex;
+	gap: 10px;
+}
+
+.header__navItem {
+	height: 23.5px;
+}
+
+.header__navItem:hover {
+	fill: var(--color-font-third);
+    transition: var(--standard-transition);
+}
