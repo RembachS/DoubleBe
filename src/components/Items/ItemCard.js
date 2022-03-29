@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import safeImg from "../../assets/img/icons/cards/safe.svg";
 import starImg from "../../assets/img/icons/cards/star.svg";
 
+import top1Img from "../../assets/img/icons/cards/top1.svg";
+import newSellerImg from "../../assets/img/icons/cards/newSeller.svg";
+import basketImg from "../../assets/img/icons/cards/basket.svg";
+
 // IMG
 import itemManImg from "../../assets/img/item/item-man.png";
 
@@ -17,7 +21,7 @@ function ItemCard(props) {
 	const ItemRate = props.itemRate;
 	const Safe = props.safe;
 	const Delivery = props.delivery;
-    const AvatarsCount = props.avatarsCount;
+	const AvatarsCount = props.avatarsCount;
 
 	let tagImgOrJustText;
 
@@ -31,18 +35,23 @@ function ItemCard(props) {
 				<div className={props.tagClass}>
 					<img className="item-card__tagImg" src={props.src} alt={TagTitle} />
 					{TagTitle}
+					<div style={{ display: "none" }}>
+						<img src={top1Img} alt=""></img>
+						<img src={newSellerImg} alt=""></img>
+						<img src={basketImg} alt=""></img>
+					</div>
 				</div>
 			);
 		}
 	}
 
-    let avtCount;
+	let avtCount;
 
-    if (AvatarsCount >= 1) {
-        avtCount = (
-            <div className="item-card__count">+{AvatarsCount - 7}</div>
-        );
-    }
+	if (AvatarsCount >= 1) {
+		avtCount = (
+			<div className="item-card__count">+{AvatarsCount - 7}</div>
+		);
+	}
 
 	let rate;
 
@@ -69,8 +78,6 @@ function ItemCard(props) {
 
 	if (Count) {
 		count = <div className="item-card__ratesItem">{Count} sprzedano</div>;
-	} else {
-		count = <div style={{ height: "8.8px" }}></div>;
 	}
 
 	let delivery;
@@ -92,7 +99,7 @@ function ItemCard(props) {
 					<img className="item-card__avatarsItem" src={itemManImg} alt="img" />
 					<img className="item-card__avatarsItem" src={itemManImg} alt="img" />
 					<img className="item-card__avatarsItem" src={itemManImg} alt="img" />
-                    {avtCount}
+					{avtCount}
 				</div>
 				{tagImgOrJustText}
 				<div className="item-card__fullPrice">{ItemCardFullPrice} zł</div>
