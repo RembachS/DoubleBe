@@ -20,11 +20,15 @@ function ItemBody() {
 				<div className="item">
 					<div className="itemTop">
 						<ItemLeftBlock />
-						<ItemCenterBlock ItemTitle={ItemsData[i].title} RatesCount={ItemsData[i].ratesCount} DeliveryCount={ItemsData[i].count} QuantityLeft={ItemsData[i].quantity}/>
+						<ItemCenterBlock 
+							ItemTitle={ItemsData[i].title} 
+							RatesCount={ItemsData[i].ratesCount} 
+							DeliveryCount={ItemsData[i].count} 
+							QuantityLeft={ItemsData[i].quantity}/>
 						<ItemRightBlock />
 					</div>
                     <div className="itemInfo">
-                        <ItemInfo></ItemInfo>
+                        <ItemInfo />
                     </div>
 				</div>
 			);

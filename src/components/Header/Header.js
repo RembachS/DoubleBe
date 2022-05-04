@@ -13,11 +13,9 @@ function Header() {
 				</Link>
 				<div className="header__nav">
 					<button className="header__navItem">
-                        <Link to="/items">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23.607" height="23.607" viewBox="0 0 23.607 23.607">
-						    	<path d="M23.4,21.358a.721.721,0,0,1,0,1.019L22.377,23.4a.721.721,0,0,1-1.019,0l-7.132-7.132A.7.7,0,0,1,14.063,16,8.875,8.875,0,1,1,16,14.063a.7.7,0,0,1,.266.164ZM8.852,2.951a5.9,5.9,0,1,0,5.9,5.9A5.9,5.9,0,0,0,8.852,2.951Z" />
-						    </svg>
-                        </Link>
+                    	<svg xmlns="http://www.w3.org/2000/svg" width="23.607" height="23.607" viewBox="0 0 23.607 23.607">
+						    <path d="M23.4,21.358a.721.721,0,0,1,0,1.019L22.377,23.4a.721.721,0,0,1-1.019,0l-7.132-7.132A.7.7,0,0,1,14.063,16,8.875,8.875,0,1,1,16,14.063a.7.7,0,0,1,.266.164ZM8.852,2.951a5.9,5.9,0,1,0,5.9,5.9A5.9,5.9,0,0,0,8.852,2.951Z" />
+						</svg>
 					</button>
 					<button className="header__navItem">
 						<svg xmlns="http://www.w3.org/2000/svg" width="23.641" height="23.607" viewBox="0 0 23.641 23.607">

@@ -1,15 +1,15 @@
 import "./__ItemCard.scss";
 import { Link } from "react-router-dom";
 
+// IMG
+import itemManImg from "../../assets/img/item/item-man.png";
+
 import safeImg from "../../assets/img/icons/cards/safe.svg";
 import starImg from "../../assets/img/icons/cards/star.svg";
 
 import top1Img from "../../assets/img/icons/cards/top1.svg";
 import newSellerImg from "../../assets/img/icons/cards/newSeller.svg";
 import basketImg from "../../assets/img/icons/cards/basket.svg";
-
-// IMG
-import itemManImg from "../../assets/img/item/item-man.png";
 
 function ItemCard(props) {
 	const ItemTitle = props.itemTitle;
@@ -28,12 +28,12 @@ function ItemCard(props) {
 	if (!TagTitle) {
 		tagImgOrJustText = <div style={{ height: "44.4px" }}></div>;
 	} else {
-		if (!props.src) {
+		if (!props.tagIcon) {
 			tagImgOrJustText = <div className={props.tagClass}>{TagTitle}</div>;
 		} else {
 			tagImgOrJustText = (
 				<div className={props.tagClass}>
-					<img className="item-card__tagImg" src={props.src} alt={TagTitle} />
+					<img className="item-card__tagImg" src={props.tagIcon} alt={TagTitle} />
 					{TagTitle}
 					<div style={{ display: "none" }}>
 						<img src={top1Img} alt=""></img>
@@ -88,7 +88,7 @@ function ItemCard(props) {
 
 	return (
 		<Link className="item-card" to={ItemLink}>
-			<img className="item-card__img" src={props.srcCardImg} alt={ItemTitle} />
+			<img className="item-card__img" src={props.cardImg} alt={ItemTitle} />
 			<div className="item-card__info">
 				<div className="item-card__title truncate">{ItemTitle}</div>
 				<div className="item-card__avatars">

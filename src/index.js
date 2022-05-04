@@ -9,11 +9,11 @@ import "./__index.scss";
 import "./__variables.scss";
 
 ReactDOM.render(
-	<React.StrictMode>
-		<BrowserRouter>
-			<Header />
-			<App />
-		</BrowserRouter>
-	</React.StrictMode>,
-	document.getElementById("root")
+    <React.StrictMode>
+        <BrowserRouter>
+            <Header />
+            <App />
+        </BrowserRouter>
+    </React.StrictMode>,
+    document.getElementById("root")
 );
